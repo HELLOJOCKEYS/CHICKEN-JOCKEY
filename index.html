@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
+    
+    <title>CHICKEN JOCKEY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+Img {
+Border-radius: 30% 0 30% 0;
+border: solid blue 1.3vw;
+margin-bottom: 65vw;
+
+
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    Border: solid black 1.3vw;
+    Background-color: red;
+font-family: sans-serif;
+margin-top: 2vw;
+font-size: 9vw;
+}
+Body {
+Background-color: aqua;
+}
+select {
+  font-size: 10vw;
+ background-color: #6aff78;
+ height: 15vw;
+}  
+h2 {
+    font-size: 10vw;
+    font-family: sans-serif;
+}
+span {
+    font-size: 4vw;
+}
+.top {
+    font-size: 5vw;
+ background-color: #40ff63;
+ border: solid 0.6vw;
+ border-radius: 300px;
+}
+button:active {
+    background-color: #FFbcbcbc;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h3 {
+    font-size: 5vw;
+    font-family: sans-serif;
+}
+.bot {
+      font-size: 6vw;
+ background-color: yellow;
+ border: solid 0.6vw;
+ width: 95vw;
+ 
+</style>
+</head>
+<body>
+  
+<h1 align="center" id="hewwo">CHICKEN JOCKEY</h1>
+<Img id="hello" SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1p1xLloZ1AmM47Xd5hXzWKYxNDKhHePT3Q&s" width="360vw" height="350vw">
+<h2 id="ft">Image-designs</h2>
+<h3>Type</h3>
+<select id="img" onchange="se()">
+    <option>movie</option>
+    <option>game</option>
+    <option>stop-motion</option>
+    <option>drawing</option>
+    <option>simplified-drawing</option>
+</select>
+<br>
+<h3>Border-colour</h3>
+<select id="bc" onchange="bc()">
+    <option>blue</option>
+    <option>red</option>
+    <option>pink</option>
+    <option>black</option>
+    <option>yellow</option>
+    <option>white</option>
+    <option>brown</option>
+    <option>green</option>
+    <option>purple</option>
+    <option>grey</option>
+     <option>aqua</option>
+ <option>orange</option>
+    
+</select>
+<br>
+<h3>Shape<br>
+<span>(RC=rounded corners)</span></h3>
+<select id="is" onchange="is()">
+    <option>square RC-2</option>
+    <option>square RC-0</option>
+    <option>square RC-4</option>
+    <option>circle</option>
+    <option>rectangle RC-0</option>
+    <option>rectangle RC-4</option>
+    <option>oval</option>
+    <option>oval2</option>
+</select>
+<br>
+<br>
+<button class="top"><a href="#hewwo"> back to image?</a></button>
+<br>
+<h2 id="st">Background-designs</h2>
+<h3>Colour</h3>
+<select id="c" onchange="oc()">
+<option>aqua</option>
+    <option>red</option>
+    <option>pink</option>
+    <option>black</option>
+    <option>yellow</option>
+    <option>white</option>
+    <option>green</option>
+    <option>grey</option>
+    <option>orange</option>
+    <option>purple</option>
+    <option>blue</option>
+    <option>brown</option>
+    </select>
+    <br>
+    
+    <h3>Patterns</h3>
+    <select id="p" onchange="p()">
+    <option>none</option>
+        <option>stripes1</option>
+        <option>zig-zags</option>
+        <option>dots1</option>
+        <option>dots2</option>
+        <option>dots3</option>    
+        
+            
+        
+    </select>
+<br>
+<br>
+<button class="top"><a href="#hewwo"> back to image?</a></button>
+    <br>
+    <h2 id="tt">Text-designs</h2>
+    <h3>Border-colour</h3>
+    <select id="tbc" onchange="tbc()">
+    <option>black</option>
+    <option>red</option>
+    <option>pink</option>
+    <option>blue</option>
+    <option>yellow</option>
+    <option>white</option>
+    <option>brown</option>
+    <option>green</option>
+    <option>purple</option>
+    <option>grey</option>
+     <option>aqua</option>
+ <option>orange</option>
+    
+</select>
+<br>
+<h3>Colour</h3>
+<select id="tc" onchange="tc()">
+     <option>black</option>
+    <option>red</option>
+    <option>pink</option>
+    <option>blue</option>
+    <option>yellow</option>
+    <option>white</option>
+    <option>brown</option>
+    <option>green</option>
+    <option>purple</option>
+    <option>grey</option>
+     <option>aqua</option>
+ <option>orange</option>
+</select>
+<br>
+<h3>Background-colour</h3>
+<select id="tbgc" onchange="tbgc()">
+     <option>red</option>
+    <option>black</option>
+    <option>pink</option>
+    <option>blue</option>
+    <option>yellow</option>
+    <option>white</option>
+    <option>brown</option>
+    <option>green</option>
+    <option>purple</option>
+    <option>grey</option>
+    <option>aqua</option>
+ <option>orange</option>
+</select>
+<br>
+<h3>Other</h3>
+<select id="ootil" onchange="ootil()">
+    <option>none</option>
+    <option>italic</option>
+    <option>crossed-out</option>
+    <option>underline</option>
+    
+    
+</select>
+<br>
+<h3>Ending/starting</h3>
+<select id="e" onchange="e()">
+    <option>none</option>
+    <option>!!</option>
+    <option>??</option>
+    <option>...</option>
+    <option>£</option>
+    <option>#</option>
+</select>
+<br>
+<h3>Shape
+<br><span>(RC=rounded corners)</span></h3>
+<select id="tsh" onchange="tsh()">
+    <option>RC-0</option>
+    <option>RC-2</option>
+    <option>RC-4</option>
+</select>
+<br>
+<br>
+<button class="top"><a href="#hewwo"> back to image?</a></button>
+<br>
+<br>
+<button onclick="random()" class="bot">randomise</button>
+<script>
+    function se() {
+        const a = document.getElementById("img").value
+       if (a === "game") {
+          const b = document.querySelector("img")
+          b.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgR7ZHxSGzmXEFBTFfB2zu58CbBce4lf1FUVsDh9Ke0w&s"       
+       }  
+       else if (a === "movie") {
+          const b = document.querySelector("img")
+          b.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1p1xLloZ1AmM47Xd5hXzWKYxNDKhHePT3Q&s"  
+       
+    }
+    else if (a === "stop-motion") {
+                  const b = document.querySelector("img")
+                  b.src="https://m.economictimes.com/thumb/msid-120097220,width-1200,height-1200,resizemode-4,imgsize-19288/chicken-jockey.jpg"
+    }
+    else if (a === "drawing") {
+                  const b = document.querySelector("img")
+                  b.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexTTjXMbW5qSoYRBeAUpdCe4fjOx0AS4tpvxGAEfLQQ&s"
+    }
+    else if (a === "simplified-drawing") {
+                  const b = document.querySelector("img")
+                  b.src="https://sketchok.com/images/articles/03-games/027-minecraft/17/20m.jpg"
+    }
+    }
+   
+    function bc() {
+    const b = document.querySelector("img")
+    const g = document.getElementById("bc").value
+ if (g === "red") {
+     b.style.border="solid red 5px"
+ }
+ else if (g === "black") {
+        const b = document.querySelector("img")
+        b.style.border="solid black 5px"
+ }
+ else if (g === "pink") {
+        const b = document.querySelector("img")
+        b.style.border="solid pink 5px"
+ }
+ else if (g === "blue") {
+    const b = document.querySelector("img")
+    b.style.border="solid blue 5px"
+    }
+    else if (g === "yellow") {
+         const b = document.querySelector("img")
+         b.style.border="solid #f8ff55 5px"
+    }
+    else if (g === "white") {
+         const b = document.querySelector("img")
+         b.style.border="solid #FFFFFF 5px"
+    }
+    else if (g === "brown") {
+         const b = document.querySelector("img")
+         b.style.border="solid #ff9e55 5px"
+    }
+    else if (g === "green") {
+         const b = document.querySelector("img")
+         b.style.border="solid #7bff2b 5px"
+    }
+    else if (g === "purple") {
+         const b = document.querySelector("img")
+         b.style.border="solid purple 5px"
+         }
+         else if (g === "grey") {
+              const b = document.querySelector("img")
+              b.style.border="solid #a5a5a5 5px"
+         }
+         else if (g === "orange") {
+                const b = document.querySelector("img")
+                b.style.border="solid #ff5e00 5px"
+         }
+      else if (g ==="aqua") {
+             const b = document.querySelector("img")
+             b.style.border="solid aqua 5px"
+      }
+ }
+ function is() {
+const g = document.getElementById("is").value
+    const b = document.querySelector("img")
+    if (g === "rectangle RC-0") {
+        b.style.height="60vw"
+        b.style.borderRadius="0"
+        b.style.marginBottom="97%"
+    }
+    else if (g === "circle") {
+         const b = document.querySelector("img")
+         b.style.borderRadius="100%"
+         b.style.marginBottom="68%"
+         b.style.height="95vw"
+         
+    }
+    else if (g === "square RC-4") {
+         const b = document.querySelector("img")
+         b.style.borderRadius="30%"
+         b.style.height="95vw"
+         b.style.marginBottom="68%"
+    }
+    else if (g === "square RC-0") {
+         const b = document.querySelector("img")
+         b.style.borderRadius="0"
+         b.style.height="95vw"
+        b.style.marginBottom="68%"
+    }
+    else if (g === "square RC-2") {
+        b.style.borderRadius="30% 0 30% 0"
+        b.style.height="95vw"
+        b.style.marginBottom="68%"
+    }
+    else if (g === "rectangle RC-4") {
+         const b = document.querySelector("img")
+         b.style.borderRadius="20%"
+         b.style.height="60vw"
+         b.style.marginBottom="97%"
+       
+    }
+    else if (g === "oval") {
+        const b = document.querySelector("img")
+        b.style.height="60vw"
+        b.style.borderRadius="100%"
+        b.style.marginBottom="97%"
+    }
+    else if (g === "oval2") {
+        const b = document.querySelector("img")
+        b.style.height="120vw"
+        b.style.borderRadius="100%"
+        b.style.marginBottom="68%"
+    }
+    
+ }
+ function oc() {
+   const g = document.getElementById("c").value
+  if (g === "black") {
+      const b = document.querySelector("body")
+      b.style.backgroundColor="black"
+      
+  }
+  else if (g === "yellow") {
+        const b = document.querySelector("body")
+     b.style.backgroundColor="#f8ff55"
+  }
+  else if (g === "white") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="white"    
+  }
+  else if (g === "aqua") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="aqua"
+  }
+  else if (g === "grey") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="#a5a5a5"
+       
+  }
+  else if (g === "red") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="red"
+      
+  }
+  else if (g === "green") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="#7bff2b"
+
+  }
+  else if (g === "pink") {
+        const b = document.querySelector("body")
+        b.style.backgroundColor="pink"
+  }
+  
+  else if (g === "orange") {
+      const b = document.querySelector("body")
+      b.style.backgroundColor="#ff5e00"
+  }
+  else if (g === "purple") {
+         const b = document.querySelector("body")
+         b.style.backgroundColor="purple"
+  }
+  else if (g === "blue") {
+         const b = document.querySelector("body")
+         b.style.backgroundColor="blue"
+  }
+  else if (g === "brown") {
+         const b = document.querySelector("body")
+         b.style.backgroundColor="#ff9e55"
+
+  }
+ }
+  function tbc() {
+    const b = document.querySelector("h1")
+    const g = document.getElementById("tbc").value
+ if (g === "red") {
+     b.style.border="solid red 5px"
+ }
+ else if (g === "black") {
+        const b = document.querySelector("h1")
+        b.style.border="solid black 5px"
+ }
+ else if (g === "pink") {
+        const b = document.querySelector("h1")
+        b.style.border="solid pink 5px"
+ }
+ else if (g === "blue") {
+    const b = document.querySelector("h1")
+    b.style.border="solid blue 5px"
+    }
+    else if (g === "yellow") {
+         const b = document.querySelector("h1")
+         b.style.border="solid #f8ff55 5px"
+    }
+    else if (g === "white") {
+         const b = document.querySelector("h1")
+         b.style.border="solid #FFFFFF 5px"
+    }
+    else if (g === "brown") {
+         const b = document.querySelector("h1")
+         b.style.border="solid #ff9e55 5px"
+    }
+    else if (g === "green") {
+         const b = document.querySelector("h1")
+         b.style.border="solid #7bff2b 5px"
+    }
+    else if (g === "purple") {
+         const b = document.querySelector("h1")
+         b.style.border="solid purple 5px"
+         }
+         else if (g === "grey") {
+              const b = document.querySelector("h1")
+              b.style.border="solid #a5a5a5 5px"
+              }
+       else if (g === "aqua") {
+      const b = document.querySelector("h1")
+    b.style.border="solid aqua 5px"
+  }
+  else if (g === "orange") {
+      const b = document.querySelector("h1")
+      b.style.border=" solid #ff5e00 5px"     
+              }
+              }
+              function tc() {
+                 const g = document.getElementById("tc").value
+  if (g === "black") {
+      const b = document.querySelector("h1")
+      b.style.color="black"
+  }
+  else if (g === "yellow") {
+        const b = document.querySelector("h1")
+     b.style.color="#f8ff55"
+  }
+  else if (g === "white") {
+        const b = document.querySelector("h1")
+        b.style.color="white"
+  }
+  else if (g === "aqua") {
+        const b = document.querySelector("h1")
+        b.style.color="aqua"
+  }
+  else if (g === "grey") {
+        const b = document.querySelector("h1")
+        b.style.color="#a5a5a5"
+  }
+  else if (g === "red") {
+        const b = document.querySelector("h1")
+        b.style.color="red"
+  }
+  else if (g === "green") {
+        const b = document.querySelector("h1")
+        b.style.color="#7bff2b"
+  }
+  else if (g === "pink") {
+        const b = document.querySelector("h1")
+        b.style.color="pink"
+  }
+  else if (g === "blue") {
+      const b = document.querySelector("h1")
+      b.style.color="blue"
+  }
+  else if (g === "purple") {
+      const b = document.querySelector("h1")
+      b.style.color="purple"
+  }
+  else if (g === "brown") {
+      const b = document.querySelector("h1")
+      b.style.color="#ff9e55"
+  }
+  else if (g === "orange") {
+      const b = document.querySelector("h1")
+      b.style.color="#ff5e00"
+  }
+  
+              }
+              function tbgc() {
+                 const g = document.getElementById("tbgc").value
+  if (g === "black") {
+      const b = document.querySelector("h1")
+      b.style.backgroundColor="black"
+  }
+  else if (g === "yellow") {
+        const b = document.querySelector("h1")
+     b.style.backgroundColor="#f8ff55"
+  }
+  else if (g === "white") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="white"
+  }
+  else if (g === "aqua") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="aqua"
+  }
+  else if (g === "grey") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="#a5a5a5"
+  }
+  else if (g === "red") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="red"
+  }
+  else if (g === "green") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="#7bff2b"
+  }
+  else if (g === "pink") {
+        const b = document.querySelector("h1")
+        b.style.backgroundColor="pink"
+  }
+  else if (g === "blue") {
+      const b = document.querySelector("h1")
+      b.style.backgroundColor="blue"
+  }
+  else if (g === "purple") {
+      const b = document.querySelector("h1")
+      b.style.backgroundColor="purple"
+  }
+  else if (g === "brown") {
+      const b = document.querySelector("h1")
+      b.style.backgroundColor="#ff9e55"
+  }
+  else if (g === "aqua") {
+      const b = document.querySelector("h1")
+    b.style.backgroundColor="aqua"
+  }
+  else if (g === "orange") {
+      const b = document.querySelector("h1")
+      b.style.backgroundColor="#ff5e00"
+  }
+              }
+             
+              function ootil() {
+              const g = document.getElementById("ootil").value
+    if (g === "crossed-out") {
+  const b = document.querySelector("h1")
+ b.style.textDecoration="line-through"
+ b.style.fontStyle=""
+                  }
+      else if (g === "italic") {
+          const b = document.querySelector("h1")
+          b.style.fontStyle="italic"
+          b.style.textDecoration=""
+      }
+      else if (g === "underline") {
+          const b = document.querySelector("h1")
+          b.style.textDecoration="underline 3px"
+          b.style.fontStyle=""
+    }
+    else if (g === "none") {
+    const b = document.querySelector("h1")
+        b.style.textDecoration=""
+        b.style.fontStyle=""
+    } 
+    }                                                 
+                  function e() {
+                  const g = document.getElementById("e").value
+                  if (g === "!!") {                     const b = document.querySelector("h1")
+                      b.innerHTML="CHICKEN JOCKEY!!"
+                  }
+                  else if (g === "??") {
+                      const b = document.querySelector("h1")
+                      b.innerHTML="CHICKEN JOCKEY??"
+                  }
+                  else if (g === "none") {
+                      const b = document.querySelector("h1")
+                      b.innerHTML="CHICKEN JOCKEY"
+                  }
+                  else if (g === "...") {
+                                            const b = document.querySelector("h1")
+                                            b.innerHTML="CHICKEN JOCKEY..."
+                  }
+                  else if (g === "£") {
+                                            const b = document.querySelector("h1")
+                                            b.innerHTML="£CHICKEN JOCKEY"
+                  }
+                  else if (g === "#") {
+                                            const b = document.querySelector("h1")
+                                            b.innerHTML="#CHICKEN JOCKEY"
+              }
+       
+                                            } 
+                                            function tsh() {
+     const g = document.getElementById("tsh").value
+     if (g === "RC-4") {
+         const b = document.querySelector("h1")
+         b.style.borderRadius="300px"
+     }
+     else if (g === "RC-2") {
+         const b = document.querySelector("h1")
+         b.style.borderRadius="100px 0 100px 0"
+     }
+     else if (g === "RC-0") {
+         const b = document.querySelector("h1")
+         b.style.borderRadius="0"
+     }
+                                              
+                                            }
+                    function p() {
+ 
+                    
+  const g = document.getElementById("p").value
+  if (g === "dots1") {
+      const b = document.querySelector("body")
+   b.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTlwxvFTNNAhkZI1GCl87IDJZipaXO0rZWbyfgW_EHg&s)"
+  b.style.backgroundSize="60vw"
+   
+  }
+  else if (g === "dots2") {
+      const b = document.querySelector("body")
+  b.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4ypARk9eHMZTvPSxVQwv4KvW7HMFAsPcLg&s)"
+  b.style.backgroundSize="60vw"
+  }
+  else if (g === "dots3") {
+      const b = document.querySelector("body")
+ b.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6EFen-z6bBD1kSONYcG72lJ6byNvigZBQPg&s)"
+ b.style.backgroundSize="60vw"
+  }
+  else if (g === "zig-zags") {
+      const b = document.querySelector("body")
+     b.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY_TncJzwfRNr9qBnjoK_89P1YgPJQDOxsg&sNr)"   
+     b.style.backgroundSize="60vw"
+     }
+     else if (g === "none") {
+            const b = document.querySelector("body")
+            b.style.backgroundImage=""   
+     }
+     else if (g === "stripes1") {
+                     const b = document.querySelector("body")
+ b.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLjVNImnFrBZEucHcgwinU2ufxHNZt_SrBw&s)"
+ b.style.backgroundSize="60vw"
+     }
+     
+   
+                         }      
+   function random()  {
+  function randomPick(id) {
+    const el = document.getElementById(id);            
+    el.selectedIndex = Math.floor(Math.random() * el.options.length);  
+    el.onchange();                                     
+  }
+
+  ["img", "bc", "is", "c", "p", "tbc", "tc", "tbgc", "ootil", "e", "tsh"].forEach(randomPick);
+}
+                    
+                                                                       
+</script>
+</body>
+</html>
